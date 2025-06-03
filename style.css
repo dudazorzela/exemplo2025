@@ -1,26 +1,29 @@
+/* Resetando margens e paddings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Definindo a fonte padrão */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
 }
 
+/* Cabeçalho */
 header {
-    text-align: center;
-    padding: 40px;
-    background-color: #3A9E1E;  /* Verde mais vibrante */
+    background-color: #2E8B57; /* Verde campo */
     color: white;
+    text-align: center;
+    padding: 40px 0;
 }
 
 header h1 {
     font-size: 2.5em;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
 }
 
 header p {
@@ -28,62 +31,109 @@ header p {
     margin-top: 10px;
 }
 
-section {
-    padding: 40px 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-}
-
-section#rural {
-    background-color: #F2FBE0; /* Verde claro */
-    border-left: 10px solid #87A96B; /* Cor do campo */
-}
-
-section#urbana {
-    background-color: #D1E3F1; /* Azul claro */
-    border-left: 10px solid #2E4053; /* Cor de edifícios urbanos */
-}
-
-.content {
-    max-width: 1000px;
+/* Container centralizado */
+.container {
+    width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
 }
 
-h2 {
-    font-size: 2.5em;
-    color: #2E4053; /* Cor escura para contrastar com o fundo claro */
-    margin-bottom: 20px;
+/* Seções */
+section {
+    padding: 40px 0;
+    margin: 20px 0;
 }
 
-p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #555;
+/* Vida no campo */
+#vida-no-campo {
+    background-color: #e1f7d5; /* Verde claro */
 }
 
-.images {
+#vida-no-campo .content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
-    margin-bottom: 30px;
 }
 
-img {
-    width: 400px; /* Largura fixa */
-    height: 250px; /* Altura fixa */
-    object-fit: cover; /* Ajusta a imagem para cobrir a área sem distorcer */
+#vida-no-campo .text {
+    flex: 1;
+}
+
+#vida-no-campo .image {
+    flex: 1;
+}
+
+#vida-no-campo img {
+    width: 100%;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-footer {
+/* Campo na cidade */
+#campo-na-cidade {
+    background-color: #d0e3f4; /* Azul claro */
+}
+
+#campo-na-cidade .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+<<<<<<< HEAD
+#campo-na-cidade .text {
+    flex: 1;
+}
+
+#campo-na-cidade .image {
+    flex: 1;
+}
+
+
+#campo-na-cidade img {
+    width: 100%;
+    height: auto;
+=======
+img {
+    width: 400px; /* Largura fixa */
+    height: 250px; /* Altura fixa */
+    object-fit: cover; /* Ajusta a imagem para cobrir a área sem distorcer */
+>>>>>>> 21396e8de3a5a520be76a6cd5efcfbd5fd500165
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Conclusão */
+#conclusao {
+    background-color: #fff;
+}
+
+#conclusao p {
+    font-size: 1.2em;
     text-align: center;
-    padding: 20px;
+}
+
+/* Rodapé */
+footer {
+
     background-color: #333;
     color: white;
+    text-align: center;
+    padding: 20px;
 }
 
 footer p {
     font-size: 1em;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    #vida-no-campo .content, #campo-na-cidade .content {
+        flex-direction: column;
+    }
+
+    #vida-no-campo .image, #campo-na-cidade .image {
+        margin-top: 20px;
+    }
 }
