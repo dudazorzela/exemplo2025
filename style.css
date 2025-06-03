@@ -15,7 +15,7 @@ body {
 
 /* Cabeçalho */
 header {
-    background-color: #2E8B57; /* Verde campo */
+    background-color: #6A5ACD; /* Roxo médio */
     color: white;
     text-align: center;
     padding: 40px 0;
@@ -46,7 +46,7 @@ section {
 
 /* Vida no campo */
 #vida-no-campo {
-    background-color: #e1f7d5; /* Verde claro */
+    background-color: #E6E6FA; /* Azul claro */
 }
 
 #vida-no-campo .content {
@@ -72,7 +72,7 @@ section {
 
 /* Campo na cidade */
 #campo-na-cidade {
-    background-color: #d0e3f4; /* Azul claro */
+    background-color: #B0C4DE; /* Azul claro suave */
 }
 
 #campo-na-cidade .content {
@@ -81,7 +81,6 @@ section {
     gap: 20px;
 }
 
-<<<<<<< HEAD
 #campo-na-cidade .text {
     flex: 1;
 }
@@ -94,12 +93,7 @@ section {
 #campo-na-cidade img {
     width: 100%;
     height: auto;
-=======
-img {
-    width: 400px; /* Largura fixa */
-    height: 250px; /* Altura fixa */
-    object-fit: cover; /* Ajusta a imagem para cobrir a área sem distorcer */
->>>>>>> 21396e8de3a5a520be76a6cd5efcfbd5fd500165
+    
     border-radius: 8px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
@@ -116,8 +110,7 @@ img {
 
 /* Rodapé */
 footer {
-
-    background-color: #333;
+    background-color: #4682B4; /* Azul médio */
     color: white;
     text-align: center;
     padding: 20px;
