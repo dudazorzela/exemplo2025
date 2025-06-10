@@ -3,7 +3,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   background-color: #fff8f0;
-  color: #4a3b2b;
+  color: #b4732d;
 }
 
 header {
@@ -19,7 +19,7 @@ header button {
   padding: 8px 16px;
   background-color: #fff;
   color: #754922;
-  border: 2px solid #a67244;
+  border: 2px solid #b9671f;
   cursor: pointer;
 }
 
