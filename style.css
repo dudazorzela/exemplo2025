@@ -1,131 +1,93 @@
-/* Resetando margens e paddings */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-/* Definindo a fonte padrão */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #fff8f0;
+  color: #4a3b2b;
 }
 
-/* Cabeçalho */
 header {
-    background-color: #6A5ACD; /* Roxo médio */
-    color: white;
-    text-align: center;
-    padding: 40px 0;
+  background-color: #6d411b;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  
 }
 
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+header button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #fff;
+  color: #754922;
+  border: 2px solid #a67244;
+  cursor: pointer;
 }
 
-header p {
-    font-size: 1.2em;
-    margin-top: 10px;
+header button:hover {
+  background-color: #3f2c1c;
+  color: white;
 }
 
-/* Container centralizado */
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
+main {
+  padding: 2rem;
 }
 
-/* Seções */
 section {
-    padding: 40px 0;
-    margin: 20px 0;
+  margin-bottom: 3rem;
 }
 
-/* Vida no campo */
-#vida-no-campo {
-    background-color: #E6E6FA; /* Azul claro */
+h2 {
+  color: #7c4d28;
 }
 
-#vida-no-campo .content {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+ul {
+  list-style-type: square;
+  padding-left: 20px;
 }
 
-#vida-no-campo .text {
-    flex: 1;
+.fotos {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-#vida-no-campo .image {
-    flex: 1;
+.fotos img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
 }
 
-#vida-no-campo img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Campo na cidade */
-#campo-na-cidade {
-    background-color: #B0C4DE; /* Azul claro suave */
-}
-
-#campo-na-cidade .content {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-#campo-na-cidade .text {
-    flex: 1;
-}
-
-#campo-na-cidade .image {
-    flex: 1;
-}
-
-
-#campo-na-cidade img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Conclusão */
-#conclusao {
-    background-color: #fff;
-}
-
-#conclusao p {
-    font-size: 1.2em;
-    text-align: center;
-}
-
-/* Rodapé */
 footer {
-    background-color: #4682B4; /* Azul médio */
-    color: white;
-    text-align: center;
-    padding: 20px;
+  background-color: #dd8f4a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }
 
-footer p {
-    font-size: 1em;
+/* 🌙 Modo Noturno */
+.modo-noturno {
+  background-color: #1a1a1a;
+  color: #f0eada;
 }
 
-/* Responsividade para dispositivos móveis */
-@media (max-width: 768px) {
-    #vida-no-campo .content, #campo-na-cidade .content {
-        flex-direction: column;
-    }
+.modo-noturno header {
+  background-color: #333;
+  color: #f0eada;
+}
 
-    #vida-no-campo .image, #campo-na-cidade .image {
-        margin-top: 20px;
-    }
+.modo-noturno header button {
+  background-color: #f0eada;
+  color: #333;
+  border-color: #f0eada;
+}
+
+.modo-noturno header button:hover {
+  background-color: #333;
+  color: #f0eada;
+}
+
+.modo-noturno footer {
+  background-color: #333;
+  color: #f0eada;
 }
