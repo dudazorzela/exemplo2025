@@ -52,8 +52,8 @@ ul {
 }
 
 .fotos img {
-  width: 30%;
-  max-width: 50px;
+  width: 100%;
+  max-width: 250px;
   border-radius: 8px;
   box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
 }
